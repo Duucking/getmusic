@@ -2,6 +2,7 @@
 主要功能：调用GD Studio's官方API([点击跳转](https://music-api.gdstudio.xyz/api.php))，搜索平台音乐，并下载音乐文件到本地
 
 音乐来源：netease, tencent, tidal, spotify, ytmusic, qobuz, joox, deezer, migu, kugou, kuwo, ximalaya, apple
+
 使用示例：
 ```python
 # 搜索下载名字为苏公堤的歌曲(默认搜索来源是酷我，默认下载路径为C盘用户下载目录)
