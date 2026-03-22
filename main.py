@@ -22,7 +22,7 @@ if __name__ == "__main__":
     search_results = search_music(sys.argv[1], source=source)
     # 如果搜索结果为空则提示用户没有找到相关歌曲，退出程序
     if not search_results:
-        print("没有找到相关歌曲")
+        print("🫤没有找到相关歌曲")
         sys.exit(1)
     # 下载第一首搜索结果的音乐
     download_music(search_results, path=download_path)
