@@ -64,10 +64,9 @@ def download_music(music_list, download_count=1, quality=999, path=None):
         parsed_url = urlparse(download_url)
         file_extension = os.path.splitext(parsed_url.path)[1]
 
-        
         # 清理文件名中的非法字符
         filename = f"{artist_str} - {name}{file_extension}"
-        filename = "".join(c for c in filename if c.isalnum() or c in (' ', '-', '_', '.', '(', ')'))
+        filename = "".join(c for c in filename if c.isalnum() or c in (' ', '-', '_', '.', '(', ')', ','))
         
         # 确保文件名不过长
         if len(filename) > 200:
